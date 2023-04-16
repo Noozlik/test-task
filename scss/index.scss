@@ -1,0 +1,80 @@
+@import "./component/header.scss";
+@import "./component/sidebar.scss";
+@import "./component/footer.scss";
+
+
+body {
+    background: linear-gradient(#2e335a, #1d1c34);
+    line-height: 21px;
+    font-family: 'SF Pro Display', sans-serif;
+  }
+  
+
+.catalog_video {
+      width: 87%;
+      padding: 30px 70px;
+  
+      .wrapper_catalog {
+        display: flex;
+        flex-wrap: wrap;
+  
+        .video_item {
+          margin: 0 10px 40px;
+          width: 23%;
+  
+          .bottom_info {
+            margin-top: 10px;
+            display: flex;
+  
+            .left_info img {
+              border-radius: 50%;
+              width: 36px;
+              height: 36px;
+            }
+  
+            .right_info {
+              margin-left: 12px;
+  
+              .heading {
+                font-weight: 700;
+                font-size: 17px;
+                color: #ffffff;
+                font-family: SF Pro Display;
+                line-height: 21px;
+              }
+  
+              .name_channel {
+                display: flex;
+                align-items: center;
+                font-size: 12px;
+                font-weight: 600;
+                text-align: center;
+                text-transform: uppercase;
+                color: rgba(255, 255, 255, 0.6);
+  
+                img {
+                  margin-left: 3px;
+                  width: 13px;
+                  height: 13px;
+                }
+              }
+  
+              .vitime {
+                font-size: 13px;
+                font-weight: 500;
+                text-align: center;
+                align-items: center;
+                display: flex;
+                align-items: center;
+                color: rgba(255, 255, 255, 0.6);
+
+  
+                span {
+                  margin: 0 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }

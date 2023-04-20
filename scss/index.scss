@@ -9,18 +9,29 @@ body {
     font-family: 'SF Pro Display', sans-serif;
   }
   
-
 .catalog_video {
-      width: 87%;
-      padding: 30px 70px;
+      padding: 0px;
+      margin: 44px 48px 40px 45px;
+      gap: 16px;
   
       .wrapper_catalog {
         display: flex;
         flex-wrap: wrap;
+
+
+
   
         .video_item {
-          margin: 0 10px 40px;
-          width: 23%;
+          margin: 0 8px 40px;
+          width: calc( (100%/3) - 16px );
+          max-width: calc( (100%/3) - 16px );
+
+          >img{
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+          }
   
           .bottom_info {
             margin-top: 10px;

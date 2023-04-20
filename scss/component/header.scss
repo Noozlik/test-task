@@ -1,8 +1,13 @@
-header {
+#header {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 16px 30px 8px;
+
+    .center {
+      margin: 0 auto;
+    }
   
     .center .field {
       display: flex;
@@ -19,6 +24,9 @@ header {
     }
   
     .right_side {
+      top: 16px;
+      right: 30px;
+      position: absolute;
       align-items: center;
       display: flex;
   

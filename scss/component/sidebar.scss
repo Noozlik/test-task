@@ -3,18 +3,25 @@
 
     .sidebar {
       width: 248px;
-      height: 982px;
-  
+      font-family: SF Pro Text;
+      font-style: normal;
+      line-height: 130%;
+
+      .logo_sidebar {
+        
+      }
+
       ul.menu_sidebar {
         list-style-type: none;
-  
+        
+        
         > li {
-          display: block;
-  
+          font-weight: 500;
+          
+
           > a {
             display: flex;
             color: rgba(255,255,255,0.5);
-            padding: 15px 40px;
             font-size: 17px;
             line-height: 130%;
           }
@@ -23,10 +30,10 @@
   
       .my_channel, .subscriptions > {
         p {
-          font-size: 14px;
+          font-weight: 600;
+          font-size: 13px;
           text-transform: uppercase;
-          display: block;
-          padding: 5px 22px;
+          color: rgba(255,255,255,0.5);
         }
   
         ul {

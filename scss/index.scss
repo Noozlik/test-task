@@ -18,15 +18,14 @@ body {
         display: flex;
         flex-wrap: wrap;
 
-
-
-  
         .video_item {
           margin: 0 8px 40px;
           width: calc( (100%/3) - 16px );
           max-width: calc( (100%/3) - 16px );
+          box-sizing: border-box;
+          border-radius: 16px;
 
-          >img{
+          >img {
             display: block;
             width: 100%;
             max-width: 100%;
@@ -34,46 +33,63 @@ body {
           }
   
           .bottom_info {
-            margin-top: 10px;
+            padding: 24px;
             display: flex;
-  
+            background: linear-gradient(180deg, rgba(72, 49, 157, 0.2) 18.75%, rgba(72, 49,157,0) 100%);
+            border-radius: 0px 0px 16px 16px;
+            flex: none;
+            order: 1;
+            align-self: stretch;
+            flex-grow: 0;
+            
             .left_info img {
-              border-radius: 50%;
-              width: 36px;
-              height: 36px;
+              width: 40px;
+              height: 40px;
             }
   
             .right_info {
-              margin-left: 12px;
+              margin-left: 16px;
+              margin-bottom: 12px;
   
               .heading {
+                font-family: SF Pro Display;
+                font-style: normal;
                 font-weight: 700;
                 font-size: 17px;
-                color: #ffffff;
-                font-family: SF Pro Display;
                 line-height: 21px;
+                color: #ffffff;
+                letter-spacing: -0.32px;
               }
   
               .name_channel {
+                width: 77px;
+                height: 22px;
+                font-family: SF Pro Text;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 22px;
                 display: flex;
                 align-items: center;
-                font-size: 12px;
-                font-weight: 600;
-                text-align: center;
+                letter-spacing: -0.408px;
                 text-transform: uppercase;
                 color: rgba(255, 255, 255, 0.6);
               }
   
               .vitime {
-                font-size: 13px;
+                width: 143px;
+                height: 22px;
+                font-family: SF Pro Text;
+                font-style: normal;
                 font-weight: 500;
-                text-align: center;
-                align-items: center;
+                font-size: 13px;
+                line-height: 22px;
                 display: flex;
                 align-items: center;
+                text-align: center;
+                letter-spacing: -0.408px;
                 color: rgba(255, 255, 255, 0.6);
 
-  
                 span {
                   margin: 0 5px;
                 }

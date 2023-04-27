@@ -1,3 +1,12 @@
-.social_icon {
-    
+footer {
+
+}
+
+.social_icons {
+    display: flex;
+    flex-direction: row;
+
+    ul {
+        list-style-type: none;
+    }
 }

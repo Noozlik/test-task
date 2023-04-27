@@ -2,13 +2,16 @@
     display: flex;
 
     .sidebar {
+      margin: 10px;
       width: 248px;
       font-family: SF Pro Text;
       font-style: normal;
-      line-height: 130%;
 
       .logo_sidebar {
-        
+
+        #settings_logo {
+        }
+
       }
 
       ul.menu_sidebar {

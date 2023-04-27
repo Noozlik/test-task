@@ -24,6 +24,7 @@ body {
           max-width: calc( (100%/3) - 16px );
           box-sizing: border-box;
           border-radius: 16px;
+          overflow: hidden;
 
           >img {
             display: block;

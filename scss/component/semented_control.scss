@@ -1,0 +1,30 @@
+.segmented_control {
+    position: absolute;
+    left: 300px;
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.29947));
+    }
+
+    li {
+        float: left;
+
+        a {
+            font-family: SF Pro Text;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            letter-spacing: -0.408px;
+            color: rgba(255, 255, 255, 0.6);
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+    }
+}

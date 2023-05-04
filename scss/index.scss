@@ -1,17 +1,19 @@
 @import "./component/header.scss";
 @import "./component/sidebar.scss";
+@import "./component/semented_control.scss";
 @import "./component/footer.scss";
-
+@import "./component/font.scss";
 
 body {
-    background: linear-gradient(#2e335a, #1d1c34);
+    background: linear-gradient(180deg, #2b2f53 3.16%, #1d1c34 36.05%);
+    box-shadow: -10px 30px 80px rgba(59, 38, 123, 0.7);
     line-height: 21px;
     font-family: 'SF Pro Display', sans-serif;
   }
   
 .catalog_video {
       padding: 0px;
-      margin: 44px 48px 40px 45px;
+      margin: 100px 48px 29px 45px;
       gap: 16px;
   
       .wrapper_catalog {

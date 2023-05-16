@@ -1,5 +1,14 @@
+@font-face {
+  font-family: SF Pro Text;
+  src: url(/fonts/sfprotext-medium-webfont.woff2), url(/fonts/sfprotext-medium-webfont.woff);
+  font-weight: 500;
+}
+@font-face {
+  font-family: SF Pro Text;
+  src: url(/fonts/sfprotext-bold-webfont.woff2), url(/fonts/sfprotext-bold-webfont.woff);
+  font-weight: 600;
+}
 #header {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -38,11 +47,12 @@
 }
 
 #wrapper_main {
+  margin: 0;
   display: flex;
 }
 #wrapper_main .sidebar {
   background: linear-gradient(180deg, #2b2f53 3.16%, #1d1c34 36.05%);
-  margin: 10px;
+  margin: 0;
   min-width: 248px;
   width: 248px;
   font-family: SF Pro Text;
@@ -92,13 +102,29 @@
 }
 #wrapper_main .sidebar ul.menu_sidebar {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#wrapper_main .sidebar ul.menu_sidebar > li {
+  position: relative;
+}
+#wrapper_main .sidebar ul.menu_sidebar > li::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2995) 50.4%, rgba(255, 255, 255, 0) 96.77%);
 }
 #wrapper_main .sidebar ul.menu_sidebar > li > a {
   display: flex;
   color: rgba(255, 255, 255, 0.5);
   font-size: 17px;
   line-height: 130%;
-  margin: 17px;
+  margin: 0;
+  padding: 12px 0 12px 20px;
 }
 #wrapper_main .sidebar .my_channel p, #wrapper_main .sidebar .subscriptions p {
   font-family: SF Pro Text;
@@ -110,10 +136,6 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
-.segmented_control {
-  position: absolute;
-  left: 300px;
-}
 .segmented_control ul {
   list-style-type: none;
   margin: 0;
@@ -162,21 +184,39 @@
   margin-right: 20px;
 }
 
-@font-face {
-  font-family: SF Pro Text;
-  src: url(/fonts/sfprotext-medium-webfont.woff2), url(/fonts/sfprotext-medium-webfont.woff), url(/fonts/sfprotext-bold-webfont.woff2), url(/fonts/sfprotext-bold-webfont.woff);
-}
 body {
   background: linear-gradient(180deg, #2b2f53 3.16%, #1d1c34 36.05%);
-  box-shadow: -10px 30px 80px rgba(59, 38, 123, 0.7);
   line-height: 21px;
   font-family: "SF Pro Display", sans-serif;
 }
 
 .catalog_video {
   padding: 0px;
-  margin: 100px 48px 29px 45px;
+  margin: 8px 48px 29px 45px;
   gap: 16px;
+}
+.catalog_video .segmented_control ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.29947));
+}
+.catalog_video .segmented_control li {
+  float: left;
+}
+.catalog_video .segmented_control li a {
+  font-family: SF Pro Text;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.408px;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 14px 16px;
+  text-decoration: none;
 }
 .catalog_video .wrapper_catalog {
   display: flex;
@@ -238,7 +278,6 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 .catalog_video .wrapper_catalog .video_item .bottom_info .right_info .vitime {
-  width: 143px;
   height: 22px;
   font-family: SF Pro Text;
   font-style: normal;
@@ -250,9 +289,6 @@ body {
   text-align: center;
   letter-spacing: -0.408px;
   color: rgba(255, 255, 255, 0.6);
-}
-.catalog_video .wrapper_catalog .video_item .bottom_info .right_info .vitime span {
-  margin: 0 5px;
 }
 
 /*# sourceMappingURL=main.css.map */

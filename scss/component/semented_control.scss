@@ -1,6 +1,4 @@
 .segmented_control {
-    position: absolute;
-    left: 300px;
     
     ul {
         list-style-type: none;
@@ -12,6 +10,7 @@
 
     li {
         float: left;
+        
 
         a {
             font-family: SF Pro Text;

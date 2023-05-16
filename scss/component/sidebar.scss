@@ -1,9 +1,11 @@
 #wrapper_main {
+      
+    margin: 0;
     display: flex;
 
     .sidebar {
       background: linear-gradient(180deg, #2b2f53 3.16%, #1d1c34 36.05%);
-      margin: 10px;
+      margin: 0;
       min-width: 248px;
       width: 248px;
       font-family: SF Pro Text;
@@ -61,15 +63,31 @@
         
         ul.menu_sidebar {
         list-style-type: none;
+        padding: 0;
+        margin: 0;
         
           > li {
+            position: relative;
+
+            &::after{
+              content: '';
+              position: absolute;
+              display: block;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              height: 1px;
+              background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2995) 50.4%, rgba(255, 255, 255, 0) 96.77%);
+            }
           
           > a {
             display: flex;
             color: rgba(255,255,255,0.5);
             font-size: 17px;
             line-height: 130%;
-            margin: 17px;
+            margin: 0;
+            padding: 12px 0 12px 20px;
+            
           }
         }
       }

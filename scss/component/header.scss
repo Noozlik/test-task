@@ -2,16 +2,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px 30px 8px;
 
     .center {
-      margin: 0 auto;
+      
     }
   
-    .center .field {
+    .field {
       display: flex;
-      align-items: center;
-      margin: 0 auto;
+      padding-left: 280px;
   
       input {
         padding: 7px;
@@ -26,14 +24,13 @@
     }
   
     .right_side {
+      display: flex;
+      position: absolute;
       top: 16px;
       right: 30px;
-      position: absolute;
-      display: flex;
   
       > div {
         margin-right: 30px;
-        align-items: center;
           
         > img {
           width: 100%;
